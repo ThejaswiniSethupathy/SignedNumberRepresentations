@@ -1,0 +1,20 @@
+
+This improves on sign-magnitude by making negation easier:
+
+The MSB is still the sign bit.
+
+To get the negative of a number, you flip all the bits of its positive form (called taking the 1’s complement).
+
+Example (4-bit):
+
++5 = 0101
+
+-5 = 1010 (1’s complement of 0101)
+
+Key points:
+
+Similar range as sign-magnitude.
+
+Still has two zeros: 0000 and 1111.
+
+Addition requires a special "end-around carry" step.
