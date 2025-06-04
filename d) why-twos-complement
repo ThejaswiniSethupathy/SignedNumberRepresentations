@@ -1,0 +1,14 @@
+1) Unique Zero Representation
+Unlike the other schemes, 2’s complement has just one zero (0000). This avoids confusion and makes comparison logic simpler.
+
+2) Simpler Arithmetic Operations
+You can add and subtract positive and negative numbers directly without extra steps to handle signs. The hardware adder just adds bits normally, no sign checks or special cases needed.
+
+3) No End-Around Carry
+1’s complement requires an extra step to add the carry back into the least significant bit, which complicates hardware. 2’s complement doesn’t need this.
+
+4) Easy Overflow Detection
+Detecting overflow in 2’s complement is straightforward — simply compare carry bits or signs of operands and results.
+
+5) Efficient Hardware Implementation
+All these benefits make 2’s complement circuits faster, simpler, and use fewer gates.
