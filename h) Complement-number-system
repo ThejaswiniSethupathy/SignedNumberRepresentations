@@ -1,0 +1,78 @@
+Complement systems make subtraction easier across different bases by turning subtraction into addition:
+
+Binary: 1’s and 2’s complement (flipping bits, adding 1).
+
+Decimal: 9’s and 10’s complement (subtract digits from 9, then add 1).
+
+Octal: 7’s and 8’s complement.
+
+Hexadecimal: F’s and 16’s complement (same concept, subtract from F and add 1).
+
+
+EXAMPLES
+  
+9’s and 10’s Complement - decimal
+
+9’s Complement
+
+Subtract each digit from 9.
+
+Example Number: 254
+
+9’s complement = 999 − 254 = 745
+
+10’s Complement
+
+Step 1: Take 9’s complement
+
+Step 2: Add 1
+
+Example:
+
+9’s complement of 254 = 745
+
+Add 1: 746 → This is −254 in 10’s complement
+
+
+7’s and 8’s Complement - octal
+
+7’s Complement
+
+Subtract each digit from 7 
+
+Example Number: 325 (octal)
+
+7’s complement = 452 
+
+8’s Complement
+
+Step 1: Take 7’s complement
+
+Step 2: Add 1
+
+Example:
+
+7’s complement of 325 = 452
+
+Add 1: 453 → This is −325 (in 8’s complement octal form)
+
+
+F’s Complement - hex
+
+Subtract each digit from F (15 in decimal)
+
+Example Number: 2A
+
+F’s complement: D5 
+
+16’s Complement (2’s Complement in Hex)
+
+Step 1: Take F’s complement
+
+Step 2: Add 1
+
+Example:
+
+F’s complement of 2A = D5
+
+Add 1 = D6 → This is −2A in 16’s complement (Hex)
