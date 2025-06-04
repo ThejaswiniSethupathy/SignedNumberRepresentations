@@ -1,0 +1,21 @@
+Sign-Magnitude Representation
+
+This is the simplest method. Here, the most significant bit (MSB) indicates the sign:
+
+0 means positive
+
+1 means negative
+
+The rest of the bits represent the number’s magnitude (absolute value).
+
+Example (4-bit):
+
++5 = 0101
+
+-5 = 1101
+
+Key points:
+
+The range is roughly from –(2ⁿ⁻¹–1) to +(2ⁿ⁻¹–1).
+
+It has two zeros: 0000 (+0) and 1000 (–0), which can complicate calculations.
