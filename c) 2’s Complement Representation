@@ -1,0 +1,20 @@
+
+This is the common method in most modern systems because it simplifies arithmetic:
+
+The MSB is the sign bit.
+
+To get the negative of a number, take the 1’s complement and add 1.
+
+Example (4-bit):
+
++5 = 0101
+
+-5 = 1011 (1’s complement of 0101 is 1010 + 1 = 1011)
+
+Key points:
+
+Range extends from –2ⁿ⁻¹ to +(2ⁿ⁻¹–1).
+
+Only one zero representation (0000), which simplifies logic.
+
+Addition and subtraction are straightforward using standard binary addition hardware.
