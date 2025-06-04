@@ -1,0 +1,106 @@
+A) For Negative Number Representation
+
+1) Take binary of the number.
+
+2) Invert all bits (1’s complement).
+
+3) Add 1 → This gives 2’s complement.
+
+B) For Addition
+
+1)Represent both numbers in binary (use 2’s complement for negatives).
+
+2) Add the numbers directly.
+
+3) Discard overflow/carry-out.
+
+4) Interpret the result using MSB:
+
+MSB 0 → Positive
+
+MSB 1 → Negative (apply 2’s complement to get magnitude)
+
+C) For Subtraction
+
+1) Convert A − B into A + (2’s complement of B)
+
+2) Perform direct binary addition
+
+3) Ignore carry-out
+
+4) Interpret result using MSB as above
+
+EXAMPLE 1:
+
++5 and +3
+
++5 = 0101
++3 = 0011
+
+Add:
+0101 + 0011 = 1000
+
+Result: 1000 → +8
+
+
+EXAMPLE 2:
+
++5 and −3
+
++5 = 0101
+−3 = 1’s complement of 0011 = 1100
+Add 1 → 1101
+
+Add:
+0101 + 1101 = 10010 (5 bits)
+
+Ignore carry → 0010
+
+Result: 0010 → +2
+
+
+EXAMPLE 3:
+
+−5 and −3
+
+−5 = 1’s complement of 0101 = 1010
+Add 1 → 1011
+−3 = 1’s complement of 0011 = 1100
+Add 1 → 1101
+
+Add:
+1011 + 1101 = 11000 (5 bits)
+
+Ignore carry → 1000
+
+Result: 1000 → −8
+
+
+EXAMPLE 4:
+
++5 − (+3)
+
++5 = 0101
+−3 = 1’s complement of 0011 = 1100
+Add 1 → 1101
+
+Add:
+0101 + 1101 = 10010 (5 bits)
+
+Ignore carry → 0010
+
+Result: 0010 → +2
+
+
+EXAMPLE 5: 
+
++3 − (+5)
+
++3 = 0011
+−5 = 1’s complement of 0101 = 1010
+Add 1 → 1011
+
+Add:
+0011 + 1011 = 1110
+
+Result: 1110 → −2
