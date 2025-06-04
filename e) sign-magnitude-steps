@@ -1,0 +1,50 @@
+Steps for Sign-Magnitude Scheme
+
+1) Represent both numbers in sign-magnitude form.
+
+2) Check signs:
+
+If same sign → add magnitudes.
+
+If different signs → subtract the smaller magnitude from the larger one.
+
+3) Assign result sign:
+
+Same sign inputs → use that sign.
+
+Different signs → use the sign of the number with larger magnitude.
+
+4) Combine sign and magnitude for the final result.
+
+
+EXAMPLE 1: 
+
+Add +5 and +3
+
+Step 1: Represent numbers
++5 → 0 101 (sign=0, magnitude=101)
++3 → 0 011
+
+Step 2: Since signs are the same, add magnitudes:
+101 + 011 = 1000 (which is 8)
+
+Step 3: Result sign = 0 (positive)
+
+Step 4: Final result = 0 1000 → +8
+
+
+EXAMPLE 2:
+
+Add +5 and –3
+
+Step 1: Represent numbers
++5 → 0 101
+–3 → 1 011
+
+Step 2: Signs differ, so subtract magnitudes:
+5 - 3 = 2
+
+Step 3: Result sign = sign of larger magnitude (which is +5, so sign=0)
+
+Step 4: Final result = 0 010 → +2
+
